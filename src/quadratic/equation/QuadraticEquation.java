@@ -31,9 +31,9 @@ public class QuadraticEquation {
 
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         if (quadraticEquation.getDiscriminant() > 0) {
-            System.out.printf("QuadraticEquation has two Root: x1 = %.2f, x2 = %.2f", quadraticEquation.getRoot1(), quadraticEquation.getRoot2());
+            System.out.printf("QuadraticEquation has two Root: x1 = %.6f, x2 = %.6f", quadraticEquation.getRoot1(), quadraticEquation.getRoot2());
         } else if (quadraticEquation.getDiscriminant() == 0) {
-            System.out.printf("QuadraticEquation has one Root: x = %.2f", quadraticEquation.getRoot1());
+            System.out.printf("QuadraticEquation has one Root: x = %.6f", quadraticEquation.getRoot1());
         } else if (quadraticEquation.getDiscriminant() < 0) {
             System.out.println("The equation has no roots");
         }
